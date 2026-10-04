@@ -344,22 +344,15 @@
       .header { margin-bottom: 40px; }
     }
     .profile-photo {
-      position: relative;
-      width: 180px;
-      height: 180px;
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      height: auto;
       margin: -40px auto 60px;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-    .profile-photo img {
-      position: absolute;
-      width: 258%;
-      max-width: none;
-      left: -72.6%;
-      top: -82.3%;
+      border-radius: 16px;
     }
     @media (max-width: 640px) {
-      .profile-photo { width: 140px; height: 140px; margin: -30px auto 48px; }
+      .profile-photo { max-width: 280px; margin: -30px auto 48px; }
     }
   </style>
 </head>
@@ -375,13 +368,13 @@
     </div>
 
     <!-- Profile Photo -->
-    <div class="profile-photo"><img src="Robin.png" alt="Robin Potel"></div>
+    <img src="Robin.png" alt="Robin Potel" class="profile-photo">
 
     <!-- More About Me -->
     <div class="more-about-me">
       <h2>More about me</h2>
       <a href="https://www.loom.com/share/e7a15789fd7441af90e6152e9b6c19a8" class="loom-link">Meet me in 5 minutes (Loom)</a>
-      <p style="font-size: 19.5px; color: #0071e3; margin-top: 8px; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 0.3px; font-weight: 700; text-decoration: underline;">Results: Sep 17 – Oct 3, 2026</p>
+      <p style="font-size: 19.5px; color: #ff3b30; margin-top: 8px; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 0.3px; font-weight: 700; text-decoration: underline;">Results: Sep 17 – Oct 3, 2026</p>
     </div>
 
     <!-- KPI Grid -->
