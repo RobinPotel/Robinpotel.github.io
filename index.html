@@ -343,6 +343,24 @@
       .ad-card { page-break-inside: avoid; }
       .header { margin-bottom: 40px; }
     }
+    .profile-photo {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin: -40px auto 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .profile-photo img {
+      position: absolute;
+      width: 258%;
+      max-width: none;
+      left: -72.6%;
+      top: -82.3%;
+    }
+    @media (max-width: 640px) {
+      .profile-photo { width: 140px; height: 140px; margin: -30px auto 48px; }
+    }
   </style>
 </head>
 <body>
@@ -355,6 +373,9 @@
         <p>Real Revenue Partner. I spot what works and scale it fast. Top spender on this account in 1 month.</p>
       </div>
     </div>
+
+    <!-- Profile Photo -->
+    <div class="profile-photo"><img src="Robin.png" alt="Robin Potel"></div>
 
     <!-- More About Me -->
     <div class="more-about-me">
